@@ -1,18 +1,26 @@
 
 
-function arrayNumbers(arr) {
+function arrayNumbers(array) {
 
-   let size = Object.keys(arr).length;
+   //let size = Object.keys(array).length;
+  // console.log(array.length);
 
-   for (let i = 1; i <=size; i++) {
+   
+
+   for (let i = 1; i <=array.length; i++) {
       let get = document.getElementById(String(i));
-      let str = String(Object.values(arr)[i-1]);
-      get.innerHTML = str;
+      //console.log(get);
+      let str = String(Object.values(array)[i-1]);
+      //console.log(str);
+      get.innerHTML = str;     
       if (str == "16") {
          get.innerHTML = "";
       
    }
+   
    }
+
+   return array;
 }
 
 export default arrayNumbers;
