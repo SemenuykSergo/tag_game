@@ -1,26 +1,18 @@
 
 
 function arrayNumbers(array) {
+//! здесь ввести дополнительный параметр функции, если он true, то заполняем, 
+//! меняя 16 на "",иначе блок if неактивен.
 
-   //let size = Object.keys(array).length;
-  // console.log(array.length);
-
-   
-
-   for (let i = 1; i <=array.length; i++) {
+   for (let i = 1; i <= array.length; i++) {
       let get = document.getElementById(String(i));
-      //console.log(get);
-      let str = String(Object.values(array)[i-1]);
-      //console.log(str);
-      get.innerHTML = str;     
+      let str = String(Object.values(array)[i - 1]);
+      get.innerHTML = str;
       if (str == "16") {
          get.innerHTML = "";
-      
-   }
-   
+      }
    }
 
    return array;
 }
-
 export default arrayNumbers;
