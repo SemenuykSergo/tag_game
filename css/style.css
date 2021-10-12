@@ -86,12 +86,15 @@ h6 {
   font-weight: inherit;
 }
 
-table td{  
-  width: 100px; 
-  height:100px; 
-  border: solid 1px silver; 
-  text-align:center;
-  background-color: greenyellow;
+table td {
+  width: 100px;
+  height: 100px;
+  border: solid 1px silver;
+  text-align: center;
+  background-color: rgb(170, 241, 62);
   font-weight: 900;
   font-size: 30px;
+}
+table tr {
+  color:rgb(51, 42, 42);
 }

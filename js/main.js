@@ -17,6 +17,3 @@ arrayTemp = arrayNumbers(arrayTemp);// передаём перемешанный
 //console.log(arrayTemp);
 
 getCellContent(arrayTemp);// получаем содержимое клетки 
- //! возможно здесь прописать в while , что если функция проверки массива 
- //! не возвращает true, то перемещение и проверка клеток активны
- //! ПОКА это не делать, getCellContent - тут ответ

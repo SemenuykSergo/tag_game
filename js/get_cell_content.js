@@ -8,11 +8,9 @@ function getCellContent(array) {
 
       let get = document.getElementById(String(i));
       get.onclick = () => {
-
          cellId = get.id;
          cellSymbol = get.innerHTML;
-         tempArray = examinationCell(cellId, cellSymbol, array);
-         //console.log(tempArray); //! отсюда отправить массив на проверку выигрыша
+         tempArray = examinationCell(cellId, cellSymbol, array);         
          arrayWin(tempArray);
       };
 
@@ -28,7 +26,6 @@ function examinationCell(cellId, cellSymbol, array) {
    let right = true;
    let getCellId = "";
    let tempArray = [];
-
 
    [1, 5, 9, 13].some(function (el) {
       if (el == cellId) {
@@ -52,9 +49,9 @@ function examinationCell(cellId, cellSymbol, array) {
       }
    });
 
-
 //! добавить условие клика по пустой клетке и клеткам не +-1,+-4
 //! чтобы не было ошибок 
+//! может заменить здесь все if на switch case ?
    if (left == true) {
       getCellId = document.getElementById(String(cellId - 1));
       let strCellSymbol = getCellId.innerHTML;
@@ -97,8 +94,6 @@ function examinationCell(cellId, cellSymbol, array) {
       }
    }
 
-
-
    function returnTempArray(array) {
       let tempArray = [];
       for (let i = 0; i < array.length; i++) {
@@ -106,7 +101,6 @@ function examinationCell(cellId, cellSymbol, array) {
       }
       return tempArray;
    }
-
 
    //! подумать и вынести эту проверку из верхних условий!!!
    //! где-то возникает путаница с возвращаемыми массивами, вроде.
