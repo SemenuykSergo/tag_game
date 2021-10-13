@@ -4,13 +4,16 @@ import arrayWin from "./array_win.js";
 function getCellContent(array) {
    let cellId, cellSymbol;
    let tempArray = [];
+   let audio = document.getElementById("myAudio");
+
    for (let i = 1; i <= array.length; i++) {
 
       let get = document.getElementById(String(i));
       get.onclick = () => {
+         audio.play();
          cellId = get.id;
          cellSymbol = get.innerHTML;
-         tempArray = examinationCell(cellId, cellSymbol, array);         
+         tempArray = examinationCell(cellId, cellSymbol, array);
          arrayWin(tempArray);
       };
 
@@ -26,6 +29,7 @@ function examinationCell(cellId, cellSymbol, array) {
    let right = true;
    let getCellId = "";
    let tempArray = [];
+
 
    [1, 5, 9, 13].some(function (el) {
       if (el == cellId) {
@@ -49,9 +53,9 @@ function examinationCell(cellId, cellSymbol, array) {
       }
    });
 
-//! добавить условие клика по пустой клетке и клеткам не +-1,+-4
-//! чтобы не было ошибок 
-//! может заменить здесь все if на switch case ?
+   //! добавить условие клика по пустой клетке и клеткам не +-1,+-4
+   //! чтобы не было ошибок 
+   //! может заменить здесь все if на switch case ?
    if (left == true) {
       getCellId = document.getElementById(String(cellId - 1));
       let strCellSymbol = getCellId.innerHTML;
@@ -59,6 +63,7 @@ function examinationCell(cellId, cellSymbol, array) {
          getCellId.innerHTML = cellSymbol;
          document.getElementById(String(cellId)).innerHTML = "";
          tempArray = returnTempArray(array);
+
          return tempArray;
       }
    }
@@ -69,6 +74,7 @@ function examinationCell(cellId, cellSymbol, array) {
          getCellId.innerHTML = cellSymbol;
          document.getElementById(String(cellId)).innerHTML = "";
          tempArray = returnTempArray(array);
+
          return tempArray;
          // }
       }
@@ -80,6 +86,7 @@ function examinationCell(cellId, cellSymbol, array) {
          getCellId.innerHTML = cellSymbol;
          document.getElementById(String(cellId)).innerHTML = "";
          tempArray = returnTempArray(array);
+
          return tempArray;
       }
    }
@@ -90,6 +97,7 @@ function examinationCell(cellId, cellSymbol, array) {
          getCellId.innerHTML = cellSymbol;
          document.getElementById(String(cellId)).innerHTML = "";
          tempArray = returnTempArray(array);
+
          return tempArray;
       }
    }
