@@ -6,14 +6,13 @@ import getCellContent from "./get_cell_content.js";
 
 
 
+
 let element = document.querySelector('#element');
 createTable(element, 4, 4);// создаём таблицу
 let arrayTemp = arrayCreate(16);// создаем новый массив
 arrayTemp = shuffle(arrayTemp);// перемешиваем его значения 
-arrayTemp = arrayNumbers(arrayTemp);// передаём перемешанный массив,
+arrayTemp = arrayNumbers(arrayTemp);
+// передаём перемешанный массив,
 // чтобы вывести его в таблицу
 
-//console.log(typeof arrayTemp);
-//console.log(arrayTemp);
-
-getCellContent(arrayTemp);// получаем содержимое клетки 
+arrayTemp=getCellContent(arrayTemp);// получаем содержимое клетки 

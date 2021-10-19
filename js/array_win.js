@@ -2,7 +2,9 @@ import arrayCreate from "./array_create.js";
 
 function arrayWin(tempArray) {
 
-   let startArray = arrayCreate(16);  
+   let win=false;
+
+   let startArray = arrayCreate(16);
    tempArray[tempArray.indexOf("",0)]=16;   
 
    for (let i = 0; i < startArray.length; i++) {
@@ -10,7 +12,7 @@ function arrayWin(tempArray) {
          return false;
       }
    }
-   console.log("Feel so good!");
+   return win=true;
 }
 
 export default arrayWin;
