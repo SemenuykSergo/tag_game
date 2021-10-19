@@ -7,6 +7,9 @@ import getCellContent from "./get_cell_content.js";
 
 
 
+
+function startGame(){   
+
 let element = document.querySelector('#element');
 createTable(element, 4, 4);// создаём таблицу
 let arrayTemp = arrayCreate(16);// создаем новый массив
@@ -16,3 +19,8 @@ arrayTemp = arrayNumbers(arrayTemp);
 // чтобы вывести его в таблицу
 
 arrayTemp=getCellContent(arrayTemp);// получаем содержимое клетки 
+}
+
+
+
+startGame();
