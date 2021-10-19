@@ -116,16 +116,25 @@ table {
   .element {
     max-width: 970px;
   }
+  .main {
+    max-width: 970px;
+  }
 }
 
 @media (max-width: 992px) {
   .element {
     max-width: 750;
   }
+  .main {
+    max-width: 750;
+  }
 }
 
 @media (max-width: 767px) {
   .element {
+    max-width: none;
+  }
+  .main {
     max-width: none;
   }
 }
@@ -139,58 +148,43 @@ body {
 }
 
 .menu {
-  margin-top: 100px;
   width: 30%;
-  color: #805a3b;
-  margin-bottom: 100px;
-}
-
-.menu .name {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Orbitron", sans-serif;
-  padding-bottom: 20px;
-  padding-top: 50px;
-  text-align: center;
-  background-color: #fd974f;
-
-  margin: 0px 60px 0px 60px;
-}
-.menu .score {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Orbitron", sans-serif;
-  padding-bottom: 20px;
-  background-color: #fd974f;
-  margin: 0px 60px 0px 60px;
-}
-.menu .button__item {
-  font-family: "Orbitron", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  margin: 0 auto;
-  display: block;
-  color: #805a3b;
-  width: 100%;
-  background-color: #fd974f;
-  padding-bottom: 70px;
-}
-
-.menu .button {
-  margin: 0px 60px 0px 60px;
-}
-
-.menu .point {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Orbitron", sans-serif;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: #fd974f;
-  margin: 0px 60px 0px 60px;
+ 
+ 
 }
 
 .element {
   width: 70%;
+  
+}
+
+.menu ul {
+
+  width: -moz-min-content;    
+  width: -webkit-min-content;
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #fd974f;
+  color: #805a3b;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 7px;
+  padding: 50px 30px 50px 30px;
+  border: solid 2px #805a3b;
+  box-shadow: 2px 2px 2px #805a3b;
+ 
+}
+
+.menu li{
+  padding-bottom: 10px;
+}
+.menu button {
+  color: #805a3b;;
+  background-color: #fd974f;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 7px;
 }
