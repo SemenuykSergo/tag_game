@@ -1,3 +1,5 @@
+// проверка возможности хода, ход и вывод нового массива значений.
+
 function examinationCell(cellId, cellSymbol, array) {
 
    let up = true;
@@ -29,8 +31,7 @@ function examinationCell(cellId, cellSymbol, array) {
       if (el == cellId) {
          down = false;
       }
-   });
-  
+   });  
 
    if (cellId) {
 
@@ -68,10 +69,7 @@ function examinationCell(cellId, cellSymbol, array) {
          tempArray = returnTempArray(array);
          return tempArray;
       }
-
-
    }
-
 }
 
 function returnTempArray(array) {

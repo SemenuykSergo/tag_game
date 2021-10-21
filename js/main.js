@@ -5,9 +5,6 @@ import arrayCreate from "./array_create.js";
 import getCellContent from "./get_cell_content.js";
 
 
-
-
-
 function startGame(){   
 
 let element = document.querySelector('#element');
@@ -23,4 +20,4 @@ arrayTemp=getCellContent(arrayTemp);// получаем содержимое к�
 
 
 
-startGame();
+startGame(); // сюда подвяжем запуск из меню, рестарт

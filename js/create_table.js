@@ -1,4 +1,4 @@
-
+// создание таблицы в передаваемом размере
 
 function createTable(parent, cols, row) {
    let idItem = 1;

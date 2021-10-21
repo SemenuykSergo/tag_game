@@ -1,3 +1,5 @@
+// проверка выигрышной комбинации
+
 import arrayCreate from "./array_create.js";
 
 function arrayWin(tempArray) {

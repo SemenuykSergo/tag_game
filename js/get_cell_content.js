@@ -1,7 +1,8 @@
+// на клетки вешается обработчик нажатий
+// проверяется возможность хода и выигрышная комбинация
+
 import arrayWin from "./array_win.js";
 import { examinationCell } from "./examination_cell.js";
-
-//var  tempArray = [];
 
 function getCellContent(array) {
 
