@@ -5,19 +5,26 @@ import arrayCreate from "./array_create.js";
 import getCellContent from "./get_cell_content.js";
 
 
-function startGame(){   
+function startGame() {
 
-let element = document.getElementById('element');
-createTable(element, 4, 4);// создаём таблицу 
-let arrayTemp = arrayCreate(16);// создаем новый массив
-arrayTemp = shuffle(arrayTemp);// перемешиваем его значения 
-arrayTemp = arrayNumbers(arrayTemp);
-// передаём перемешанный массив,
-// чтобы вывести его в таблицу
-arrayTemp=getCellContent(arrayTemp);// получаем содержимое клетки 
+   let element = document.getElementById('element');
+   createTable(element, 4, 4);// создаём таблицу 
+   let arrayTemp = arrayCreate(16);// создаем новый массив
+   arrayTemp = shuffle(arrayTemp);// перемешиваем его значения 
+   arrayTemp = arrayNumbers(arrayTemp);
+   // передаём перемешанный массив,
+   // чтобы вывести его в таблицу
+   arrayTemp = getCellContent(arrayTemp);// получаем содержимое клетки 
 }
 
 
-
+restartGame();
 startGame(); // сюда подвяжем запуск из меню, рестарт
+
+
+
+function restartGame() {
+   let restartButton = document.getElementById('button_restart');
+   restartButton.onclick = function () { window.location = "index.html"; }
+}
 

@@ -148,22 +148,22 @@ body {
 }
 
 .menu {
-  width: 30%;
- 
- 
+  width: 15%;
 }
 
 .element {
-  width: 70%;
-  
+  width: 40%;
 }
 
 .menu ul {
-
-  width: -moz-min-content;    
+  width: -moz-min-content;  
   width: -webkit-min-content;
   margin: auto;
+
+  /*  вот это не дает уменьшаться блоку меню */
+
   margin-top: 150px;
+  margin-left: 50px;
   text-align: center;
   white-space: nowrap;
   background-color: #fd974f;
@@ -175,14 +175,13 @@ body {
   padding: 50px 30px 50px 30px;
   border: solid 2px #805a3b;
   box-shadow: 2px 2px 2px #805a3b;
- 
 }
 
-.menu li{
+.menu li {
   padding-bottom: 10px;
 }
 .menu button {
-  color: #805a3b;;
+  color: #805a3b;
   background-color: #fd974f;
   font-weight: 900;
   font-size: 25px;
