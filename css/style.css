@@ -86,32 +86,6 @@ h6 {
   font-weight: inherit;
 }
 
-table td {
-  width: 100px;
-  height: 100px;
-  border: solid 2px #805a3b;
-  box-shadow: 2px 2px 2px #805a3b;
-  border-radius: 5px;
-  text-align: center;
-  background-color: #fd974f;
-  font-family: "Orbitron", sans-serif;
-  font-weight: 900;
-  font-size: 32px;
-}
-table tr {
-  color: #c60000;
-}
-
-table {
-  margin: auto;
-}
-
-.element {
-  padding: 50px 30px 50px 30px;
-  max-width: 1200px;
-  margin: 0px auto;
-}
-
 @media (max-width: 1200px) {
   .element {
     max-width: 970px;
@@ -139,6 +113,33 @@ table {
   }
 }
 
+table td {
+  width: 100px;
+  height: 100px;
+  border: solid 2px #805a3b;
+  box-shadow: 2px 2px 2px #805a3b;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fd974f;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+}
+table tr {
+  color: #c60000;
+}
+
+table {
+  margin: auto;
+}
+
+.element {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 50px 30px 50px 30px;
+  width: 40%;
+}
+
 body {
   background-color: #fef2e4;
 }
@@ -149,39 +150,31 @@ body {
 
 .menu {
   width: 15%;
-}
-
-.element {
-  width: 40%;
-}
-
-.menu ul {
-  width: -moz-min-content;  
-  width: -webkit-min-content;
-  margin: auto;
-
-  /*  вот это не дает уменьшаться блоку меню */
-
-  margin-top: 150px;
-  margin-left: 50px;
+  margin: 125px auto 0px auto;
   text-align: center;
   white-space: nowrap;
-  background-color: #fd974f;
   color: #805a3b;
   font-family: "Orbitron", sans-serif;
   font-weight: 900;
   font-size: 25px;
   letter-spacing: 7px;
-  padding: 50px 30px 50px 30px;
   border: solid 2px #805a3b;
   box-shadow: 2px 2px 2px #805a3b;
+  padding: 25px 10px 10px 10px;
+  background-color: #fd974f;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: auto;
+  height: 25%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .menu li {
   padding-bottom: 10px;
 }
 .menu button {
-  color: #805a3b;
+  color: #c60000;
   background-color: #fd974f;
   font-weight: 900;
   font-size: 25px;
